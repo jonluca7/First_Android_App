@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="359dp"
+        android:layout_height="55dp"
+        android:hint="Entrez un nombre entier"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculez la factorielle"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="le résultat du calcul de la factorielle est : "
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>
