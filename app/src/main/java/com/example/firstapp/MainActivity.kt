@@ -21,10 +21,11 @@ class MainActivity : ComponentActivity() {
         binding = MainWindowBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
-    Override fun onStart(){
+    override fun onStart(){
+        super.onStart()
         binding.buttonCalculate.setOnClickListener {
             val number = binding.editTextNumber.text.toString().toInt()
-            val result = 1
+            var result = 1
             for (i in 2..number) {
                 result *= i
             }
